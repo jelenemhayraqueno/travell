@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+	<meta charset="utf-8">
+	<title>Navigation Menu</title>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+	margin: 15;
+	padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+body{
+	background: aquamarine;
+	height: 100vh;
+	-webkit-background-size:cover;
+	background-size:cover;
+	background-position: center center;
+	position:relative;
+}
+nav{
+  float: right;
+  list-style: none;
+  margin-top: 25px;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-family:poppins;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+  color: black;
+  font-weight: light;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+.content{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+ font-family: 'Lemonada', cursive;
+  color: black;
+}
+.content div{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.section3 {
+			position: relative;
+			top: 35vh;
+			left: 15vh;
+
+			}
+			.spot{
+  			height: 70%;
+  			display: flex;
+  			place-items: center;
+  			text-align: center;
+			}
+.container{
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card{
+  height: 280px;
+  max-width: 350px;
+  margin: 0 60px;
+  background: #555555;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px rgba(255,255,255,0.5);
+}
+.card:hover{
+  height: 470px;
+  box-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+}
+.card .img{
+  height: 200px;
+  width: 100%;
+}
+.card .img img{
+  height: 100%;
+  width: 200%;
+  object-fit: cover;
+}
+.card .top-text{
+  padding: 5px;
+	font-family: 'Lemonada', cursive;
+}
+.card .top-text .name{
+margin: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+ font-family: 'Lemonada', cursive;
+ line-height: .5;
+}
+.card .top-text p{
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 20px;
+}
+.card .bottom-text{
+  padding: 0 20px 10px 20px;
+  margin-top: 1px;
+  background: #555555;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+font-family: B612;
+line-height: 1.5;
+}
+.card:hover .bottom-text{
+  opacity: 1;
+  visibility: visible;
+}
+.card .bottom-text .text{
+  text-align: justify;
+}
+.card .bottom-text .btn{
+  margin: 10px;
+  text-align: left;
+ font-family: 'Lemonada', cursive;
+}
+.card .bottom-text .btn a{
+  text-decoration: none;
+  background: #add8e6;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+.card .bottom-text .btn a:hover{
+  transform: scale(0.9);
+}
+@media screen and (max-width: 978px) {
+  .container{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .card{
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}
+
+</style>
+</head>
+	<body>
+	<nav>
+		
+	<ul>
+		<li><a href="main.html">Travel Ideas</a></li>
+		<li><a href="home.html">HOME</a></li>
+		<li><a href="p.html">PLACES</a></li>
+		<li><a href="aa.html">ABOUT</a></li>
+		<li><a href="contactt.html">CONTACT</a></li>
+	</ul>
+	</nav>
+<div class="content">
+	<div>
+		Featuring the top four most visited tourist spot.</div></div>
+
+
+
+
+<div class="section3">
+			<div class=".spot">	
+				<div class="container">
+    					<div class="card">
+          					<img src="france.jpg" alt="france" width="200" height="200" class="img">		
+						<div class="top-text">
+        						<div class="name">France</div>
+							
+						</div>
+						<div class="bottom-text">
+        						<div class="text">
+								France has 89.4 million vistors. Mont Saint-Michel is one of France's most striking landmarks. this "Pyramid of the Seae" is a mystical sight, perched 80 meters above the bay and surrounded by imposing defensive walls and bastions. From the 14th century onwards, the successive conflicts of the Hundred Years War between France and England required new, powerful fortifications to be erected.
+							</div>
+							
+						</div>
+					</div>
+					<div class="card">
+        					<img src="spain.jpg" class="img">
+						<div class="top-text">
+        						<div class="name">Spain</div>
+						
+						</div>
+						<div class="bottom-text">
+        						<div class="text">
+								Spain has 82.7 million visitors. Flamenco Let’s start with the most famous Spanish dance, the Flamenco, a beautiful and passionate art form that has been recognized by UNESCO as a Heritage of Humanity.Flamenco also includes a mix of guitar, singing, dancing, hand-clapping, and finger-snapping. Watching a Flamenco performance is definitely one of the best things to do in Spain!
+							</div>
+							
+						</div>
+					</div>
+					<div class="card">
+         					<img src="UN.jpg" class="img">
+						<div class="top-text">
+          						<div class="name">US</div>
+						
+						</div>
+						<div class="bottom-text">
+          						<div class="text">
+									US has 79.6 million visitors.The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor within New York City, in the United States.The copper statue, a gift from the people of France to the people of the United States, was designed by French sculptor Frédéric Auguste Bartholdi and its metal framework was built by Gustave Eiffel. The statue was dedicated on October 28, 1886.</div>
+							
+						</div>
+					</div>
+					<div class="card">
+        					<img src="china.jpg" class="img">
+					<div class="top-text">
+        					<div class="name">China</div>
+				
+					</div>
+					<div class="bottom-text">
+        					<div class="text">
+							China has 62.9 million visitors.The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe. The first emperor of China. Little of the Qin wall remains.Later on, many successive dynasties have built and maintained multiple stretches of border walls. The most well-known sections of the wall were built by the Ming dynasty
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+ 
+
+	</body>
+</html>
